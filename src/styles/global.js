@@ -9,7 +9,15 @@ export default createGlobalStyle`
 
   body {
     background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
-    color: ${({theme}) => theme.COLORS.WHITE};
+    color: ${({theme}) => theme.COLORS.WHITE}
+    -webkit-font-smoothing: antialiased;
+  } ;
+
+  body, input, button, textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    outline: none;
+  };
 
   a {
     text-decoration: none;
@@ -19,6 +27,8 @@ export default createGlobalStyle`
     cursor: pointer;
     transition: filter 0.2s;
   }
+
+
 
   button:hover, a:hover { 
     filter: brightness(0.9);

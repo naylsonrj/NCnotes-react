@@ -1,10 +1,12 @@
-import styled from 'styled-components'
+import { Container } from './styles';
+import { Button } from '../../components/Button';
 
-function Details() {
-
-
+export function Details() {
   return (
-    <h1>PAREI NA AULA 387 </h1>
+    <Container >
+      <h1>Hello World!</h1>
+      <Button />
+    </Container>
   )
 }
 

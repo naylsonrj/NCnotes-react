@@ -9,7 +9,7 @@ export default createGlobalStyle`
 
   body {
     background-color: ${({theme}) => theme.COLORS.BACKGROUND_900};
-    color: ${({theme}) => theme.COLORS.WHITE}
+    color: ${({theme}) => theme.COLORS.WHITE};
     -webkit-font-smoothing: antialiased;
   } ;
 
@@ -21,14 +21,13 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
+    
   }
 
   button, a { 
     cursor: pointer;
     transition: filter 0.2s;
   }
-
-
 
   button:hover, a:hover { 
     filter: brightness(0.9);
